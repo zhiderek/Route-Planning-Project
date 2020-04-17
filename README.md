@@ -1,21 +1,11 @@
 # Route Planning Project
 
-This repo contains the starter code for the Route Planning project.
-
-<img src="map.png" width="600" height="450" />
-
-## Cloning
-
-When cloning this project, be sure to use the `--recurse-submodules` flag. Using HTTPS:
-```
-git clone https://github.com/udacity/CppND-Route-Planning-Project.git --recurse-submodules
-```
-or with SSH:
-```
-git clone git@github.com:udacity/CppND-Route-Planning-Project.git --recurse-submodules
-```
-
-## Dependencies for Running Locally
+This project contains the algorithms for planning the shortest path in a map using A* search. The map was derived from 
+the OpenStreetMap API and it looks like the 
+following:
+<img src="images/map.png" width="600" height="450" />
+This project is part of the curriculum developed by Udacity.
+## Dependencies 
 * cmake >= 3.11.3
   * All OSes: [click here for installation instructions](https://cmake.org/install/)
 * make >= 4.1 (Linux, Mac), 3.81 (Windows)
@@ -52,10 +42,16 @@ Or to specify a map file:
 ./OSM_A_star_search -f ../<your_osm_file.osm>
 ```
 
-## Testing
+###Demo
+Running the executable, you will be asked to specify the start position (start_x,start_y) and end position (end_x, end_y).
+The coordinates are between 0 to 100 indicating the portion of the map. (0,0) corresponds to the bottom left corner and (100,100) 
+corresponds to the top right corner.
 
-The testing executable is also placed in the `build` directory. From within `build`, you can run the unit tests as follows:
-```
-./test
-```
+The result after specifying inputs (0,0), (50, 50) look like the following:
+<img src="images/0_0_50_50.png" width="600" height="450" />
+
+The result after specifying inputs (20,20), (67, 84) look like the following:
+<img src="images/20_20_67_84.png" width="600" height="450" />
+
+  
 
