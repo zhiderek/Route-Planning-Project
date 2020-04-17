@@ -4,6 +4,7 @@ This project contains the algorithms for planning the shortest path in a map usi
 the OpenStreetMap API and it looks like the 
 following:
 <img src="images/map.png" width="600" height="450" />
+
 This project is part of the curriculum developed by Udacity.
 ## Dependencies 
 * cmake >= 3.11.3
@@ -42,7 +43,7 @@ Or to specify a map file:
 ./OSM_A_star_search -f ../<your_osm_file.osm>
 ```
 
-###Demo
+### Demo
 Running the executable, you will be asked to specify the start position (start_x,start_y) and end position (end_x, end_y).
 The coordinates are between 0 to 100 indicating the portion of the map. (0,0) corresponds to the bottom left corner and (100,100) 
 corresponds to the top right corner.
